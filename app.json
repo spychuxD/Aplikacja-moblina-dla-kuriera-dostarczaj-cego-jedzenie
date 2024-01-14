@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "orderFoodCourierApp",
+    "slug": "orderFoodCourierApp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "INTERNET"
+      ],
+      "package": "com.dawid.spychalski00gmail.com.orderFoodCourierApp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "apiServerUrl": "http://127.0.0.1:8000",
+      "eas": {
+        "projectId": "a76c46c3-6328-447d-a5c4-6f514e8e0b18"
+      }
+    }
+  }
+}
