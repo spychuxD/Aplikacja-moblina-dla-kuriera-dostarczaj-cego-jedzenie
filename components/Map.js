@@ -8,7 +8,7 @@ import { Modal, Center, NativeBaseProvider, Button, Text } from "native-base";
 import CourierIcon from "../assets/courierIcon.png";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import axios from "axios";
-
+import googleMapsApiKey from '../key'
 export default function MapScreen() {
   const [region, setRegion] = useState({
     latitude: 50.866077,
@@ -57,7 +57,7 @@ export default function MapScreen() {
   //     console.log("Restaurant Location:", selectedOrder);
   //     if (storedToken !== null) {
   //       const response = await axios.get(
-  //         `https://maps.googleapis.com/maps/api/directions/json?origin=${courierLocation.latitude},${courierLocation.longitude}&destination=${destination}&key=AIzaSyD40ckrPhTz4c1PvOQxx2VWPMV_Znb_B2o`
+  //         `https://maps.googleapis.com/maps/api/directions/json?origin=${courierLocation.latitude},${courierLocation.longitude}&destination=${destination}&key=${googleMapsApiKey}`
   //       );
 
   //       if (response.status === 200) {
